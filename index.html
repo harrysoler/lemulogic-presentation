@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,102 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+                  <textarea data-template>
+                    ## Laboratorio virtual Lemulogic
+                    Harrizon Soler
+                  </textarea>
+                </section>
+                <section>
+					<div class="r-hstack justify-center">
+					<ul style="padding-right:5rem">
+						<li>Motivación</li>
+						<li>Dificultades</li>
+						<li>Deserción</li>
+						<li>Disparidades</li>
+					</ul>
+                        <img class="r-stretch" height="300" src="images/motivation1.jpeg">
+					</div>
+                </section>
+                <section>
+                    <h2>Objetivos</h2>
+					<ul>
+						<li>Aplicación de navegador</li>
+						<li>Bucles y condicionales</li>
+						<li>Gamificación</li>
+					</ul>
+                </section>
+				<section>
+                    <img class="r-stretch" height="400" src="images/editor-fibonacci.png">
+                </section>
+				<section>
+                    <img class="r-stretch" height="400" src="images/execution-tanks.png">
+                </section>
+                <section>
+					<div class="r-hstack justify-center">
+                        <img class="r-stretch" width="700" src="images/node-parts.png" style="padding-right:3rem">
+                        <img class="r-stretch" width="1000" src="images/node-types.png">
+					</div>
+                </section>
+				<section>
+                    <img height="500" src="images/example-execution.png">
+                </section>
+                <section>
+                    <h2>Fases</h2>
+					<ol>
+						<li>Diseño</li>
+						<li>Implementación</li>
+						<li>Investigación</li>
+					</ol>
+                </section>
+				<section>
+                    <img class="r-stretch" height="300" src="images/architecture-component.png">
+                </section>
+				<section>
+                    <img height="500" src="images/flujo-minijuego.png">
+                </section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+                        <img data-id="box1" class="r-stretch" width="500" src="images/session-evidence-1.jpg" style="padding-right:1rem">
+                        <img data-id="box2" class="r-stretch" width="500" src="images/session-evidence-2.jpg" style="padding-right:1rem">
+                        <img data-id="box3" class="r-stretch" width="500" src="images/session-evidence-3.jpg">
+					</div>
+					<ul>
+						<li>50 estudiantes</li>
+						<li>Cuestionario cuantitativo (pre-test & post-test)</li>
+						<li>Encuesta cualitativa (post-test)</li>
+					</ul>
+                </section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+                        <img data-id="box1" class="r-stretch" width="500" src="images/session-evidence-1.jpg" style="padding-right:1rem">
+                        <img data-id="box2" class="r-stretch" width="500" src="images/session-evidence-2.jpg" style="padding-right:1rem">
+                        <img data-id="box3" class="r-stretch" width="500" src="images/session-evidence-3.jpg">
+					</div>
+                    <img data-id="plot1" class="r-stretch" width="500" src="images/bar-plot.png">
+                </section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                    <h2>Análisis cuantitativo</h2>
+					<div class="r-hstack justify-center">
+                        <img data-id="plot1" class="r-stretch" width="500" src="images/bar-plot.png" style="padding-right:1rem">
+                        <img class="r-stretch" width="500" src="images/math-table.png">
+					</div>
+                </section>
+				<section data-background-iframe="https://harrizonsoler.github.io/lemulogic/" data-background-interactive>
+                </section>
+                <section>
+					<div class="r-hstack justify-center">
+                        <div style="padding-right:3rem">
+                            <h2>Plan de mejora</h2>
+                            <ul>
+                                <li>Paradigma funcional</li>
+                                <li>Plataforma de minijuegos</li>
+                                <li>Funcionalidad multijugador</li>
+                            </ul>
+                        </div>
+                        <img class="r-stretch" width="400" src="images/lemulogic-octalysis.png">
+                    </div>
+                </section>
 			</div>
 		</div>
 
@@ -25,6 +119,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +128,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
